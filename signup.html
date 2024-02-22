@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Signup</title>
+</head>
+<body style="background-color:rgba(240, 164, 23, 0.808)">
+    <div class="center">
+        <h1 style="text-align:center;">Signup Account</h1>
+        <div>
+            <form>
+                <label for="firstname">Firstname</label>
+                <label for="lastname" style="margin-left:35%">Lastname</label><br>
+                <input id="firstname" type="text" style="width:46%; padding:5px; padding-right:6px;">
+                <input id="lastname" type="text" style="width:46%; padding:5px;"><br><br>
+                <label for="username" style="margin-top:15px;">Username</label><br>
+                <input id="username" type="text" placeholder="example@gmail.com"><br><br>
+                <label for="password">Password</label><br>
+                <input id="password" type="password"><br><br>
+                <label for="Birthdate">Birthdate</label>
+                <input id="birthdate" style="margin-top:10px;" type="date">
+                <label for="gender" style="margin-left:10px;">Gender</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="unidentified">Unidentifed</option>
+                </select>
+                <button id="submit-button" type="button" onclick="validateLogin();">Sign up</button><br><br>
+                <input id="terms-conditions" type="checkbox">
+                <label for="terms-conditions">I accept terms & conditions</label>
+            </form>
+        </div>
+        <p>Already have an account? <a href="index.html">Log in</a></p>
+    </div>
+</body>
+</html>
